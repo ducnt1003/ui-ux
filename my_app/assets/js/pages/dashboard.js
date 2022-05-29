@@ -136,9 +136,9 @@ var optionsProfileVisit = {
   }
 };
 var optionsVisitorsProfile = {
-  series: [70, 30],
-  labels: ['Male', 'Female'],
-  colors: ['#435ebe', '#55c6e8'],
+  series: [30, 30, 30, 10],
+  labels: ['Đang làm', 'Hoàn thành','Quá hạn', 'Đóng'],
+  colors: ['#435ebe', '#55c6e8','#3F3C00','FFDEDE'],
   chart: {
     type: 'donut',
     width: '100%',

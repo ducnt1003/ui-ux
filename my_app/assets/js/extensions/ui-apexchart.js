@@ -360,14 +360,11 @@ var candleOptions = {
 };
 var barOptions = {
   series: [{
-    name: "Net Profit",
-    data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
+    name: "Tất cả",
+    data: [44, 55, 57, 56]
   }, {
-    name: "Revenue",
-    data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
-  }, {
-    name: "Free Cash Flow",
-    data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
+    name: "Hoàn thành",
+    data: [35, 41, 36, 26]
   }],
   chart: {
     type: "bar",
@@ -389,11 +386,11 @@ var barOptions = {
     colors: ["transparent"]
   },
   xaxis: {
-    categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"]
+    categories: ["Chưa phân loại", "Thực hiện", "Giao việc", "Giám sát"]
   },
   yaxis: {
     title: {
-      text: "$ (thousands)"
+      text: "Việc"
     }
   },
   fill: {
@@ -402,7 +399,7 @@ var barOptions = {
   tooltip: {
     y: {
       formatter: function formatter(val) {
-        return "$ " + val + " thousands";
+        return val + " việc";
       }
     }
   }

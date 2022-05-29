@@ -38123,15 +38123,15 @@ var config4 = {
     }
   }
 };
-var ctxBar = document.getElementById("bar").getContext("2d");
+var ctxBar = document.getElementById("bar-chart").getContext("2d");
 var myBar = new (chart_js__WEBPACK_IMPORTED_MODULE_0___default())(ctxBar, {
   type: 'bar',
   data: {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+    labels: ["Cao", "Trung bình", "Thấp"],
     datasets: [{
-      label: 'Students',
-      backgroundColor: [chartColors.grey, chartColors.grey, chartColors.grey, chartColors.grey, chartColors.info, chartColors.blue, chartColors.grey],
-      data: [5, 10, 30, 40, 35, 55, 15]
+      label: 'Công việc',
+      backgroundColor: [chartColors.red, chartColors.green, chartColors.grey],
+      data: [50, 45, 30]
     }]
   },
   options: {
