@@ -121,7 +121,174 @@
             </div>
         </div>
         <div id="main">
-            
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+            <div>
+                <h3>Nhân viên</h3>
+            </div>
+
+            <!-- Input with Icons start -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Quản lý thành viên</h4>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group position-relative has-icon-left">
+                                    <input type="text" class="form-control is-invalid" placeholder="Tìm thành viên">
+                                    <div class="form-control-icon">
+                                        <svg class="bi" width="1em" height="1em" fill="currentColor">
+                                            <use xlink:href="assets/images/bootstrap-icons.svg#search" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="buttons" >
+                                <a href="#" class="btn icon icon-left btn-success"><i data-feather="user"></i> Thêm thành viên </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Danh sách nhân viên</h4>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped" id="table1">
+                            <thead>
+                                <tr>
+                                    <th>Họ và tên</th>
+                                    <th>Chức danh</th>
+                                    <th>Ngày sinh</th>
+                                    <th>Giới tính</th>
+                                    <th>Email</th>
+                                    <th>Điện thoại</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Bùi Vân Anh</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Nữ</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href data-bs-toggle="modal" data-bs-target="#large">
+                                            <dl class="dt w-100 ma0 pa0">
+                                                <dt class="the-icon">
+                                                    <svg class="bi" width="1em" height="1em" fill="currentColor">
+                                                        <use
+                                                            xlink:href="assets/images/bootstrap-icons.svg#grip-vertical" />
+                                                    </svg>
+                                                </dt>
+                                            </dl>
+                                        </a>
+                                        <div class="modal fade text-left" id="large" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="myModalLabel1">Cài đặt nhân viên</h5>
+                                                        <button type="button" class="close rounded-pill" data-bs-dismiss="modal" aria-label="Close"><i data-feather="x"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Lê Ngọc Anh</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Nữ</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href data-bs-toggle="modal" data-bs-target="#large">
+                                            <dl class="dt w-100 ma0 pa0">
+                                                <dt class="the-icon">
+                                                    <svg class="bi" width="1em" height="1em" fill="currentColor">
+                                                        <use
+                                                            xlink:href="assets/images/bootstrap-icons.svg#grip-vertical" />
+                                                    </svg>
+                                                </dt>
+                                            </dl>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Lương Đức Dương</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Nam</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href data-bs-toggle="modal" data-bs-target="#large">
+                                            <dl class="dt w-100 ma0 pa0">
+                                                <dt class="the-icon">
+                                                    <svg class="bi" width="1em" height="1em" fill="currentColor">
+                                                        <use
+                                                            xlink:href="assets/images/bootstrap-icons.svg#grip-vertical" />
+                                                    </svg>
+                                                </dt>
+                                            </dl>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nguyễn Trung Đức</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Nam</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href data-bs-toggle="modal" data-bs-target="#large">
+                                            <dl class="dt w-100 ma0 pa0">
+                                                <dt class="the-icon">
+                                                    <svg class="bi" width="1em" height="1em" fill="currentColor">
+                                                        <use
+                                                            xlink:href="assets/images/bootstrap-icons.svg#grip-vertical" />
+                                                    </svg>
+                                                </dt>
+                                            </dl>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Vương Hoàng Anh</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Nam</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href data-bs-toggle="modal" data-bs-target="#large">
+                                            <dl class="dt w-100 ma0 pa0">
+                                                <dt class="the-icon">
+                                                    <svg class="bi" width="1em" height="1em" fill="currentColor">
+                                                        <use
+                                                            xlink:href="assets/images/bootstrap-icons.svg#grip-vertical" />
+                                                    </svg>
+                                                </dt>
+                                            </dl>
+                                        </a>
+                                    </td>
+                                </tr>
+                        </table>
+                    </div>
+                </div>
         </div>
     </div>
     <script src="assets/js/app.js"></script>
