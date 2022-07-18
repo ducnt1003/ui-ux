@@ -147,7 +147,8 @@
                                                 </li>
                                                 <li class="breadcrumb-item active" aria-current="page"><a
                                                         href="work.html">Quản lí công việc </a></li>
-                                                <li class="breadcrumb-item active" aria-current="page">Chi tiết công việc
+                                                <li class="breadcrumb-item active" aria-current="page">Chi tiết công
+                                                    việc
                                                 </li>
                                             </ol>
                                         </nav>
@@ -157,9 +158,75 @@
                         </div>
                     </div>
                     <div class="container">
-                        <button class="btn btn-primary">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#large">
                             Thêm công việc
                         </button>
+                    </div>
+                    <div class="modal fade text-left" id="large" tabindex="-1" role="dialog"
+                        aria-labelledby="myModalLabel1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="myModalLabel1">Thêm Công việc</h5>
+                                    <button type="button" class="close rounded-pill" data-bs-dismiss="modal"
+                                        aria-label="Close">
+                                        <i data-feather="x"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <label for="roundText">Tên việc</label>
+                                                <input type="text" id="roundText" class="form-control round"
+                                                    placeholder="Tên việc">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4">
+                                                <label for="roundText">Thời gian bắt đầu</label>
+                                                <fieldset class="form-group">
+                                                    <input type="date">
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-md-6 mb-4">
+                                                <label for="roundText">Thời gian dự kiến kết thúc</label>
+                                                <fieldset class="form-group">
+                                                    <input type="date">
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4">
+                                                <label for="roundText">Người làm</label>
+                                                <div class="form-group position-relative has-icon-right">
+                                                    <input type="text" class="form-control" placeholder="Tên">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group mb-3">
+                                                    <label> Mô tả công việc</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                        rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn" data-bs-dismiss="modal">
+                                        <i class="bx bx-x d-block d-sm-none"></i>
+                                        <span class="d-none d-sm-block">Close</span>
+                                    </button>
+                                    <button type="button" class="btn btn-primary ml-1" data-bs-dismiss="modal">
+                                        <i class="bx bx-check d-block d-sm-none"></i>
+                                        <span class="d-none d-sm-block">Accept</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -186,8 +253,8 @@
                             <td>27/05-01/06</td>
                             <td>
                                 <div class="col-9 progress progress-info">
-                                    <div class="progress-bar" role="progressbar" style="width: 60%"
-                                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100">
                                     </div>
                                 </div>
                                 <div class="col-3 text-center">60%</div>
@@ -195,22 +262,19 @@
                             <td>
                                 <a href data-bs-toggle="modal" data-bs-target="#large">
                                     <dl class="dt w-100 ma0 pa0">
-                                        <dt class="the-icon"><span
-                                                class="fa-fw select-all fas"></span>
+                                        <dt class="the-icon"><span class="fa-fw select-all fas"></span>
                                         </dt>
                                     </dl>
                                 </a>
-                                <div class="modal fade text-left" id="large" tabindex="-1"
-                                    role="dialog" aria-labelledby="myModalLabel1"
-                                    aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-scrollable"
-                                        role="document">
+                                <div class="modal fade text-left" id="large" tabindex="-1" role="dialog"
+                                    aria-labelledby="myModalLabel1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="myModalLabel1">Cập nhật
                                                     tiến độ</h5>
-                                                <button type="button" class="close rounded-pill"
-                                                    data-bs-dismiss="modal" aria-label="Close">
+                                                <button type="button" class="close rounded-pill" data-bs-dismiss="modal"
+                                                    aria-label="Close">
                                                     <i data-feather="x"></i>
                                                 </button>
                                             </div>
@@ -219,8 +283,7 @@
                                                     <div class="row">
                                                         <div class="form-group">
                                                             <label for="roundText">Tên việc</label>
-                                                            <input type="text" id="roundText"
-                                                                class="form-control round"
+                                                            <input type="text" id="roundText" class="form-control round"
                                                                 placeholder="Tên việc">
                                                         </div>
                                                     </div>
@@ -229,8 +292,7 @@
                                                             <label for="roundText">Tình
                                                                 trạng</label>
                                                             <fieldset class="form-group">
-                                                                <select class="form-select"
-                                                                    id="basicSelect">
+                                                                <select class="form-select" id="basicSelect">
                                                                     <option>Hoàn thành</option>
                                                                     <option>Đang làm</option>
                                                                     <option>Quá hạn</option>
@@ -243,20 +305,16 @@
                                                         <div class="col-md-6 mb-4">
                                                             <label for="roundText">Hoàn
                                                                 thành</label>
-                                                            <div
-                                                                class="form-group position-relative has-icon-right">
+                                                            <div class="form-group position-relative has-icon-right">
 
-                                                                <input type="text"
-                                                                    class="form-control"
-                                                                    placeholder="%">
+                                                                <input type="text" class="form-control" placeholder="%">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn"
-                                                    data-bs-dismiss="modal">
+                                                <button type="button" class="btn" data-bs-dismiss="modal">
                                                     <i class="bx bx-x d-block d-sm-none"></i>
                                                     <span class="d-none d-sm-block">Close</span>
                                                 </button>
@@ -280,8 +338,8 @@
                             <td>23/5-26/5</td>
                             <td>
                                 <div class="col-9 progress progress-info">
-                                    <div class="progress-bar" role="progressbar" style="width: 100%"
-                                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100">
                                     </div>
                                 </div>
                                 <div class="col-3 text-center">100%</div>
@@ -289,8 +347,7 @@
                             <td>
                                 <a href data-bs-toggle="modal" data-bs-target="#large">
                                     <dl class="dt w-100 ma0 pa0">
-                                        <dt class="the-icon"><span
-                                                class="fa-fw select-all fas"></span>
+                                        <dt class="the-icon"><span class="fa-fw select-all fas"></span>
                                         </dt>
                                     </dl>
                                 </a>
@@ -305,8 +362,8 @@
                             <td>23/5-26/5</td>
                             <td>
                                 <div class="col-9 progress progress-info">
-                                    <div class="progress-bar" role="progressbar" style="width: 0%"
-                                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100">
                                     </div>
                                 </div>
                                 <div class="col-3 text-center">0%</div>
@@ -314,8 +371,7 @@
                             <td>
                                 <a href data-bs-toggle="modal" data-bs-target="#large">
                                     <dl class="dt w-100 ma0 pa0">
-                                        <dt class="the-icon"><span
-                                                class="fa-fw select-all fas"></span>
+                                        <dt class="the-icon"><span class="fa-fw select-all fas"></span>
                                         </dt>
                                     </dl>
                                 </a>
@@ -330,8 +386,8 @@
                             <td>1/6-5/6</td>
                             <td>
                                 <div class="col-9 progress progress-info">
-                                    <div class="progress-bar" role="progressbar" style="width: 0%"
-                                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100">
                                     </div>
                                 </div>
                                 <div class="col-3 text-center">0%</div>
@@ -339,8 +395,7 @@
                             <td>
                                 <a href data-bs-toggle="modal" data-bs-target="#large">
                                     <dl class="dt w-100 ma0 pa0">
-                                        <dt class="the-icon"><span
-                                                class="fa-fw select-all fas"></span>
+                                        <dt class="the-icon"><span class="fa-fw select-all fas"></span>
                                         </dt>
                                     </dl>
                                 </a>

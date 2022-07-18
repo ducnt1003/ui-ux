@@ -2,20 +2,9 @@
 
 
 
-<p align="center">
-	<a href="http://zuramai.github.io/mazer/demo">Demo Page</a>&nbsp;&nbsp;&nbsp;
-	<a href="http://zuramai.github.io/mazer/docs">Documentation Page</a>&nbsp;&nbsp;&nbsp;
-</p>
-
 ## Usage
 #### Using a ready-made built (recommended)
-Download the latest release from the [releases page](https://github.com/zuramai/mazer/releases "releases page")
-Open the index HTML file and explore the source code.
-#### Building yourself
-- Install dependencies using the node package manager of your choice. For example run `npm install` 
-- Files are bundled by Laravel Mix to the dist folder.
-    - Either run `npm run hot` and open `http://localhost:8080` to see a hot-reloading copy of the generated files
-    - Or run `npm run watch`  (rebuilds on file changes) or `npm run production` and open `dashboard.html` in from the my_app folder.
+    - run `npm run watch`  (rebuilds on file changes) or `npm run production` and open `dashboard.html` from the my_app folder.
 
 ## Community Mazer-based open sources
 
