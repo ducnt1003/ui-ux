@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../assets/css/shared/iconly.css">
     <link rel="stylesheet" href="../assets/css/widgets/todo.css">
     <link rel="stylesheet" href="../assets/css/pages/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/schedule.css">
 
     <style>
         .fontawesome-icons {
@@ -192,11 +193,11 @@
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab"
-                            aria-controls="home" aria-selected="true">Tổng quan</a>
+                            aria-controls="home" aria-selected="true">Lịch công việc</a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab"
-                            aria-controls="profile" aria-selected="false">Lịch công việc</a>
+                            aria-controls="profile" aria-selected="false">Tổng quan</a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab"
@@ -205,6 +206,72 @@
                 </ul>
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <p class='my-2'>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <!-- Schedule -->
+                                    <div class="container py-7">
+                                        <h2 class="text-uppercase text-letter-spacing-xs my-0 text-primary font-weight-bold">
+                                          Lịch làm việc
+                                        </h2>
+                                        <p class="text-sm text-dark mt-0 mb-5">Công việc gần đây.</p>
+                                        <!-- Days -->
+                                        <div class="row">
+                                          <div class="col-lg-4 mb-3" id="Friday, Nov 13th">
+                                            <h4 class="mt-0 mb-3 text-dark op-8 font-weight-bold">
+                                              Hôm nay, Thứ Tư, 20/07
+                                            </h4>
+                                            <ul class="list-timeline list-timeline-primary">
+                                              <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                                <p class="my-0 text-dark flex-fw text-sm text-uppercase">Đào móng</p>
+                                              </li>
+                                              <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                                <p class="my-0 text-dark flex-fw text-sm text-uppercase">Trộn xi măng</p>
+                                              </li>
+                                              <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-4">
+                                                <p class="my-0 text-dark flex-fw text-sm text-uppercase">Xếp gạch</p>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                          <div class="col-lg-4 mb-3" id="Saturday, Nov 14th">
+                                            <h4 class="mt-0 mb-3 text-dark op-8 font-weight-bold">
+                                              Thứ Năm, 21/07
+                                            </h4>
+                                            <ul class="list-timeline list-timeline-primary">
+                                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                                    <p class="my-0 text-dark flex-fw text-sm text-uppercase">Công tác cốt thép</p>
+                                                </li>
+                                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                                    <p class="my-0 text-dark flex-fw text-sm text-uppercase">Vận chuyển xi măng</p>
+                                                </li>
+                                            </ul>
+                                          </div>
+                                          <div class="col-lg-4 mb-3" id="Sunday, Nov 15th">
+                                            <h4 class="mt-0 mb-3 text-dark op-8 font-weight-bold">
+                                              Thứ sáu, 22/07
+                                            </h4>
+                                            <ul class="list-timeline list-timeline-primary">
+                                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                                    <p class="my-0 text-dark flex-fw text-sm text-uppercase">Đổ bê tông lót</p>
+                                                </li>
+                                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                                    <p class="my-0 text-dark flex-fw text-sm text-uppercase">Gia công cốp pha</p>
+                                                </li>
+                                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-4">
+                                                    <p class="my-0 text-dark flex-fw text-sm text-uppercase">Đổ bê tông</p>
+                                                </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </p>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                         <p class='my-2'>
                             <div class="row" id="basic-table">
                                 <!-- Trạng thái công việc chart-->
@@ -245,17 +312,9 @@
                             </div>
                         </p>
                     </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-body">
-                                    <h4 class="card-title">Comming soon</h4>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <p class='my-2'>
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-body">
@@ -264,6 +323,7 @@
                                 
                             </div>
                         </div>
+                        </p>
                         <div class="card card-body">
                             <div class="d-flex mb-3">
                               <!-- Avatar -->
