@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="../assets/css/main/app.css">
+    <link rel="stylesheet" href="../assets/css/main/app-dark.css">
+    <link rel="shortcut icon" href="../assets/images/logo/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/logo/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="../assets/css/shared/iconly.css">
+    <link rel="stylesheet" href="../assets/css/widgets/todo.css">
+    <link rel="stylesheet" href="../assets/css/pages/fontawesome.css">
+
+    <style>
+        .fontawesome-icons {
+            text-align: center;
+        }
+
+        article dl {
+            background-color: rgba(0, 0, 0, .02);
+            padding: 20px;
+        }
+
+        .fontawesome-icons .the-icon {
+            font-size: 24px;
+            line-height: 1.2;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header position-relative">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="">
+                            <a href="dashboard.html"><div class="avatar avatar-lg me-3 ">
+                                <img src="../assets/images/faces/1.jpg" alt="" srcset="" style="width:100%">
+                            </div>
+                            
+                        </a>
+                        </div>
+                        <div class="mt-3">
+                            <h5>Van A</h5>
+                        </div>
+                        <div class="theme-toggle d-flex gap-2  align-items-center mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                aria-hidden="true" role="img" class="iconify iconify--system-uicons" width="20"
+                                height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21">
+                                <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M10.5 14.5c2.219 0 4-1.763 4-3.982a4.003 4.003 0 0 0-4-4.018c-2.219 0-4 1.781-4 4c0 2.219 1.781 4 4 4zM4.136 4.136L5.55 5.55m9.9 9.9l1.414 1.414M1.5 10.5h2m14 0h2M4.135 16.863L5.55 15.45m9.899-9.9l1.414-1.415M10.5 19.5v-2m0-14v-2"
+                                        opacity=".3"></path>
+                                    <g transform="translate(-210 -1)">
+                                        <path d="M220.5 2.5v2m6.5.5l-1.5 1.5"></path>
+                                        <circle cx="220.5" cy="11.5" r="4"></circle>
+                                        <path d="m214 5l1.5 1.5m5 14v-2m6.5-.5l-1.5-1.5M214 18l1.5-1.5m-4-5h2m14 0h2">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <div class="form-check form-switch fs-6">
+                                <input class="form-check-input  me-0" type="checkbox" id="toggle-dark">
+                                <label class="form-check-label"></label>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                aria-hidden="true" role="img" class="iconify iconify--mdi" width="20" height="20"
+                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m17.75 4.09l-2.53 1.94l.91 3.06l-2.63-1.81l-2.63 1.81l.91-3.06l-2.53-1.94L12.44 4l1.06-3l1.06 3l3.19.09m3.5 6.91l-1.64 1.25l.59 1.98l-1.7-1.17l-1.7 1.17l.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95l2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85c-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14c.4-.4.82-.76 1.27-1.08c.75-.53 1.93.36 1.85 1.19c-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82c-2.81 3.14-2.7 7.96.31 10.98c3.02 3.01 7.84 3.12 10.98.31Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="sidebar-toggler  x">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title">Menu</li>
+                        <li class="sidebar-item  active">
+                            <a href="dashboard.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="personal.html" class='sidebar-link'>
+                                <i class="bi bi-person-workspace"></i>
+                                <span>Công việc cá nhân</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="kpi.html" class='sidebar-link'>
+                                <i class="bi bi-people-fill"></i>
+                                <span>KPI</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+            <div>
+                <h2 class="pageheader-title">Dashboard</h2>
+            </div>
+            <div class="row">
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-3 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="stats-icon purple">
+                                        <i class="iconly-boldShow"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h6 class="text-muted font-semibold">Tổng số cv</h6>
+                                    <h6 class="font-extrabold mb-0">100</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-3 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="stats-icon blue">
+                                        <i class="iconly-boldProfile"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h6 class="text-muted font-semibold">Số cv đã tạo</h6>
+                                    <h6 class="font-extrabold mb-0">10</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-3 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="stats-icon green">
+                                        <i class="iconly-boldAdd-User"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h6 class="text-muted font-semibold">Số cv đang làm</h6>
+                                    <h6 class="font-extrabold mb-0">4</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-3 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="stats-icon red">
+                                        <i class="iconly-boldBookmark"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h6 class="text-muted font-semibold">Số cv quá hạn</h6>
+                                    <h6 class="font-extrabold mb-0">1</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab"
+                            aria-controls="home" aria-selected="true">Tổng quan</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab"
+                            aria-controls="profile" aria-selected="false">Lịch công việc</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab"
+                            aria-controls="contact" aria-selected="false">Tin tức</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <p class='my-2'>
+                            <div class="row" id="basic-table">
+                                <!-- Trạng thái công việc chart-->
+                                <div class="col-12 col-md-4"> 
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Trạng thái</h4>
+                                                <p>Biểu đồ theo trạng thái công việc</p>
+                                                <div id="chart-visitors-profile"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4"> 
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Vai trò</h4>
+                                                <p>Biểu đồ vai trò của công việc</p>
+                                                <div id="bar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4"> 
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Ưu tiên</h4>
+                                                <p>Biểu đồ tổng hợp mức độ ưu tiên công việc</p>
+                                                <canvas id="bar-chart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <h4 class="card-title">Comming soon</h4>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <h4 class="card-title">Tin tức</h4>   
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="card card-body">
+                            <div class="d-flex mb-3">
+                              <!-- Avatar -->
+                              <div class="avatar avatar-xs me-2">
+                                <a href="#"> <span class="fa-fw select-all fas"></span> </a>
+                              </div>
+                              <!-- Post input -->
+                              <form class="w-100">
+                                <textarea class="form-control pe-4 border-0" rows="2" data-autoresize="" placeholder="Share your thoughts..."></textarea>
+                              </form>
+                            </div>
+                            <!-- Share feed toolbar START -->
+                            <ul class="nav nav-pills nav-stack small fw-normal">
+                              <li class="nav-item">
+                                <a class="nav-link bg-light py-1 px-2 mb-0" href="#!" data-bs-toggle="modal" data-bs-target="#feedActionPhoto"> <i class="bi bi-image-fill text-success pe-2"></i>Photo</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link bg-light py-1 px-2 mb-0" href="#!" data-bs-toggle="modal" data-bs-target="#feedActionVideo"> <i class="bi bi-camera-reels-fill text-info pe-2"></i>Video</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link bg-light py-1 px-2 mb-0" data-bs-toggle="modal" data-bs-target="#modalCreateEvents"> <i class="bi bi-calendar2-event-fill text-danger pe-2"></i>Event </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link bg-light py-1 px-2 mb-0" href="#!" data-bs-toggle="modal" data-bs-target="#modalCreateFeed"> <i class="bi bi-emoji-smile-fill text-warning pe-2"></i>Feeling /Activity</a>
+                              </li>
+                              <li class="nav-item dropdown ms-lg-auto">
+                                <a class="nav-link bg-light py-1 px-2 mb-0" href="#" id="feedActionShare" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="bi bi-three-dots"></i>
+                                </a>
+                                <!-- Dropdown menu -->
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="feedActionShare">
+                                  <li><a class="dropdown-item" href="#"> <i class="bi bi-envelope fa-fw pe-2"></i>Create a poll</a></li>
+                                  <li><a class="dropdown-item" href="#"> <i class="bi bi-bookmark-check fa-fw pe-2"></i>Ask a question </a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#"> <i class="bi bi-pencil-square fa-fw pe-2"></i>Help</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                            <!-- Share feed toolbar END -->
+                        </div>
+
+                        <div class="card-header border-0 pb-0">
+                            <div class="d-flex align-items-center justify-content-between">
+                              <div class="d-flex align-items-center">
+                                <!-- Avatar -->
+                                <div class="avatar me-2">
+                                  <a href="#"> <span class="fa-fw select-all fas"></span> </a>
+                                </div>
+                                <!-- Title -->
+                                <div>
+                                  <h6 class="card-title mb-0"> <a href="#!"> Văn B </a></h6>
+                                  <p class="mb-0 small">9 November at 23:29</p>
+                                </div>
+                              </div>
+                              </a>
+                            </div>
+                              <!-- Card share action END -->
+                              <div class="card-body pb-0">
+                                <p>Đây là thông báo về dự án xây dựng cao ốc...</p>
+                                <!-- Feed react START -->
+                                <ul class="nav nav-stack pb-2 small">
+                                  <li class="nav-item ms-sm-auto">
+                                    <a class="nav-link" href="#!"> <i class="bi bi-chat-fill pe-1"></i>Comments (12)</a>
+                                  </li>
+                                </ul>
+                                <!-- Feed react END -->
+                              </div>
+                              <div class="d-flex mb-3">
+                                <!-- Avatar -->
+                                <div class="avatar avatar-xs me-2">
+                                  <a href="#!"> <span class="fa-fw select-all fas"></span> </a>
+                                </div>
+                                <!-- Comment box  -->
+                                <!-- Comment box  -->
+                                <form class="position-relative w-100">
+                                  <textarea data-autoresize="" class="form-control pe-4 bg-light" rows="1" placeholder="Add a comment..."></textarea>
+                                  <!-- Emoji button -->
+                                  
+                                </form>
+                              </div>
+                          </div>
+                          
+                        
+                    </div>
+                </div>
+            </div>     
+        </div>
+    </div>
+    <script src="../assets/js/app.js"></script>
+
+    <script src="../assets/js/pages/dashboard.js"></script>
+    <script src="../assets/js/extensions/ui-todolist.js"></script>
+    <script src="../assets/js/extensions/ui-apexchart.js"></script>
+    <script src="../assets/js/extensions/ui-chartjs.js"></script>
+
+</body>
+
+</html>
